@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace DragonCode\LaravelHttpUserAgent;
 
+use DragonCode\LaravelHttpUserAgent\Middlewares\SetHeaderMiddleware;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -22,11 +23,7 @@ class ServiceProvider extends BaseServiceProvider
 
     protected function bootUserAgent(): void
     {
-        Http::globalOptions([
-            'headers' => [
-                'User-Agent' => config('http.global.user_agent'),
-            ],
-        ]);
+        Http::globalRequestMiddleware(new SetHeaderMiddleware());
     }
 
     protected function bootConfigPublishes(): void
