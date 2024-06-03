@@ -1,0 +1,65 @@
+{
+    "name": "dragon-code/laravel-http-user-agent",
+    "description": "Passing your own User Agent in all Http requests",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "http",
+        "user-agent",
+        "dragon-code",
+        "Andre Helldar",
+        "Helldar"
+    ],
+    "authors": [
+        {
+            "name": "Andrey Helldar",
+            "email": "helldar@dragon-code.pro",
+            "homepage": "https://dragon-code.pro"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/TheDragonCode/laravel-http-user-agent/issues",
+        "source": "https://github.com/TheDragonCode/laravel-http-user-agent"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/config": "^10.0 || ^11.0",
+        "illuminate/http": "^10.0 || ^11.0",
+        "illuminate/support": "^10.0 || ^11.0",
+        "symfony/polyfill-php83": "^1.29"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0 || ^9.0",
+        "pestphp/pest": "^2.34"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "DragonCode\\LaravelHttpUserAgent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dragon-code/codestyler": true,
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "symfony/thanks": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": [
+            "@php vendor/bin/pest --compact"
+        ]
+    }
+}
