@@ -7,6 +7,12 @@
 [![Github Workflow Status][badge_build]][link_build]
 [![License][badge_license]][link_license]
 
+## FAQ
+
+- Q: What problem does this package solve?
+- A: In cases where it is necessary to explicitly specify the value `User-Agent` in outgoing requests.
+  In other cases it is not necessary.
+
 ## Installation
 
 ```Bash
@@ -60,6 +66,12 @@ php artisan vendor:publish --provider="DragonCode\LaravelHttpUserAgent\ServicePr
 ```
 
 As a result of its execution, the file `config/http.php` will be created.
+
+You can also disable value assignment through the environment settings:
+
+```ini
+APP_USER_AGENT_ENABLED = false
+```
 
 ## License
 
