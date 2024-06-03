@@ -18,7 +18,7 @@ class Version
     {
         $json = static::json(static::composerPath());
 
-        if (!static::isValid($json)) {
+        if (! static::isValid($json)) {
             return static::$default;
         }
 

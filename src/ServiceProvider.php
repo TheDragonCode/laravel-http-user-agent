@@ -25,7 +25,7 @@ class ServiceProvider extends BaseServiceProvider
         Http::globalOptions([
             'headers' => [
                 'User-Agent' => config('http.global.user_agent'),
-            ]
+            ],
         ]);
     }
 

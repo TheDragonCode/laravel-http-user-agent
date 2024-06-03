@@ -16,5 +16,5 @@ return [
                 env('MAIL_FROM_ADDRESS', 'hello@example.com')
             )
         ),
-    ]
+    ],
 ];
