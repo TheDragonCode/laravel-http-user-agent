@@ -7,7 +7,7 @@ use DragonCode\LaravelHttpUserAgent\Helpers\Version;
 return [
     'global' => [
         'user_agent' => [
-            'enabled' => (bool)env('APP_USER_AGENT_ENABLED', true),
+            'enabled' => (bool) env('APP_USER_AGENT_ENABLED', true),
 
             'value' => env(
                 'APP_USER_AGENT',
@@ -18,7 +18,7 @@ return [
                     env('APP_URL', 'http://localhost'),
                     env('MAIL_FROM_ADDRESS', 'hello@example.com')
                 )
-            )
+            ),
         ],
-    ]
+    ],
 ];
