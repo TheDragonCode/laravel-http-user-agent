@@ -22,6 +22,16 @@
         "issues": "https://github.com/TheDragonCode/laravel-http-user-agent/issues",
         "source": "https://github.com/TheDragonCode/laravel-http-user-agent"
     },
+    "funding": [
+        {
+            "type": "boosty",
+            "url": "https://boosty.to/dragon-code"
+        },
+        {
+            "type": "yoomoney",
+            "url": "https://yoomoney.ru/to/410012608840929"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "illuminate/config": "^10.0 || ^11.0",
